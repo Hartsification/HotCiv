@@ -27,7 +27,7 @@ public class GameImpl implements Game {
 	private Player currentPlayerInTurn;
 	private ArrayList<Tile> cityTiles; 
 	private ArrayList<Unit> unitList;
-	private AgeStrategy ageStrategy;
+	private AgingStrategy agingStrategy;
 	private WinnerStrategy winnerStrategy;
 	private ActionStrategy actionStrategy;
 	private AttackStrategy attackStrategy;
@@ -45,7 +45,7 @@ public class GameImpl implements Game {
 
 		cityTiles = new ArrayList<Tile>(); 
 		unitList = new ArrayList<Unit>();
-		ageStrategy = factory.getAgeStrategy();
+		agingStrategy = factory.getAgingStrategy();
 		winnerStrategy = factory.getWinnerStrategy();
 		actionStrategy = factory.getActionStrategy();
 		attackStrategy = factory.getAttackStrategy();
@@ -175,7 +175,7 @@ public class GameImpl implements Game {
 	}
 
 	public void endOfRound() {
-		age += ageStrategy.incrementAge(age);
+		age += agingStrategy.incrementAge(age);
 		roundNumber++;
 
 		ArrayList<Tile> surroundingTiles;

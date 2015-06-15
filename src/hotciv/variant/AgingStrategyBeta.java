@@ -1,10 +1,10 @@
 package hotciv.variant;
 
-import hotciv.framework.AgeStrategy;
+import hotciv.framework.AgingStrategy;
 
-public class AgeStrategyBeta implements AgeStrategy{
+public class AgingStrategyBeta implements AgingStrategy{
 
-public AgeStrategyBeta(){}; 
+public AgingStrategyBeta(){}; 
 	public int incrementAge(int age) {
 		if(age >= -4000 && age < -100) {
 			return 100;

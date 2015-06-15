@@ -1,14 +1,14 @@
 package hotciv.factory;
 
-import hotciv.framework.AgeStrategy;
+import hotciv.framework.AgingStrategy;
 import hotciv.framework.WinnerStrategy;
-import hotciv.variant.AgeStrategyBeta;
+import hotciv.variant.AgingStrategyBeta;
 import hotciv.variant.WinnerStrategyBeta;
 
 public class BetaFactory extends AlphaFactory {
 	@Override
-	public AgeStrategy getAgeStrategy() {
-		return new AgeStrategyBeta();
+	public AgingStrategy getAgingStrategy() {
+		return new AgingStrategyBeta();
 	}
 
 	@Override

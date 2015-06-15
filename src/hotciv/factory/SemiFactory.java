@@ -1,7 +1,7 @@
 package hotciv.factory;
 
 import hotciv.framework.ActionStrategy;
-import hotciv.framework.AgeStrategy;
+import hotciv.framework.AgingStrategy;
 import hotciv.framework.AttackStrategy;
 import hotciv.framework.DieRollStrategy;
 import hotciv.framework.GrowthStrategy;
@@ -9,7 +9,7 @@ import hotciv.framework.ProductionStrategy;
 import hotciv.framework.SetupStrategy;
 import hotciv.framework.WinnerStrategy;
 import hotciv.variant.ActionStrategySemi;
-import hotciv.variant.AgeStrategyBeta;
+import hotciv.variant.AgingStrategyBeta;
 import hotciv.variant.AttackStrategyEpsilon;
 import hotciv.variant.GrowthStrategyEta;
 import hotciv.variant.ProductionStrategyEta;
@@ -34,8 +34,8 @@ public class SemiFactory extends AlphaFactory {
 	}
 
 	@Override
-	public AgeStrategy getAgeStrategy() {
-		return new AgeStrategyBeta();
+	public AgingStrategy getAgingStrategy() {
+		return new AgingStrategyBeta();
 	}
 
 	@Override

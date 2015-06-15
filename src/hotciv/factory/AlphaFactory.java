@@ -8,7 +8,7 @@ import hotciv.common.ProductionStrategyAlpha;
 import hotciv.common.SetupStrategyAlpha;
 import hotciv.common.WinnerStrategyAlpha;
 import hotciv.framework.ActionStrategy;
-import hotciv.framework.AgeStrategy;
+import hotciv.framework.AgingStrategy;
 import hotciv.framework.AttackStrategy;
 import hotciv.framework.HotCivFactory;
 import hotciv.framework.GrowthStrategy;
@@ -22,7 +22,7 @@ public class AlphaFactory implements HotCivFactory {
 		return new ActionStrategyAlpha();
 	}
 
-	public AgeStrategy getAgeStrategy() {
+	public AgingStrategy getAgingStrategy() {
 		return new AgeStrategyAlpha();
 	}
 

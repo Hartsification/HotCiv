@@ -3,7 +3,7 @@ package hotciv.framework;
 public interface HotCivFactory {
 	
 	public ActionStrategy getActionStrategy(); 
-	public AgeStrategy getAgeStrategy(); 
+	public AgingStrategy getAgingStrategy(); 
 	public SetupStrategy getSetupStrategy(); 
 	public WinnerStrategy getWinnerStrategy(); 
 	public AttackStrategy getAttackStrategy();

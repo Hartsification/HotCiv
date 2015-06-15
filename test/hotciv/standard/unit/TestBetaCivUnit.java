@@ -14,12 +14,12 @@ import org.junit.Test;
 
 public class TestBetaCivUnit {
 	WinnerStrategy winnerStrategy;
-	AgeStrategy ageStrategy;
+	AgingStrategy ageStrategy;
 	
 	@Before
 	public void setUp() {
 		winnerStrategy = new WinnerStrategyBeta();
-		ageStrategy = new AgeStrategyBeta();
+		ageStrategy = new AgingStrategyBeta();
 	}
 	
 	@Test

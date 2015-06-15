@@ -87,7 +87,7 @@ class HotCivFactory3 implements HotCivFactory, Factory {
 		return null;
 	}
 
-	public AgeStrategy getAgeStrategy() {
+	public AgingStrategy getAgingStrategy() {
 		// TODO Auto-generated method stub
 		return null;
 	}
